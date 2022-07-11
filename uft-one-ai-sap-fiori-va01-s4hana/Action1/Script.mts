@@ -24,7 +24,7 @@ counter = 0
 Do
 	counter = counter + 1
 	wait 1
-	If count >= 60 Then
+	If counter >= 60 Then
 		msgbox "The search icon didn't show up within " & counter & " tries, check application."
 		ExitScript
 	End If
