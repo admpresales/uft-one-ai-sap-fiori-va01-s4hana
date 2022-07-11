@@ -26,7 +26,7 @@ Do
 	wait 1
 	If counter >= 60 Then
 		msgbox "The search icon didn't show up within " & counter & " tries, check application."
-		ExitScript
+		ExitTest
 	End If
 Loop Until AIUtil("search").Exist
 
