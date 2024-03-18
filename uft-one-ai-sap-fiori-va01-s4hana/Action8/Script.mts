@@ -3,5 +3,6 @@ AIUtil.SetContext AppContext																'Tell the AI engine to point at the 
 
 AIUtil("profile").Click
 AIUtil("power").Click
+AIUtil.FindText("Sign Out").Click
 AIUtil.FindTextBlock("OK").Click
 AppContext.Close																			'Close the application at the end of your script
