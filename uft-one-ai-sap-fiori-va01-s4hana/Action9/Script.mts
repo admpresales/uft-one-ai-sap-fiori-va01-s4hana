@@ -3,7 +3,8 @@ AIUtil.SetContext AppContext																'Tell the AI engine to point at the 
 
 set objSendKey=CreateObject("WScript.shell")
 objSendKey.SendKeys "{F11}"
-AIUtil.FindText("has been saved").CheckExists TRUE
+Set OrderConfirmationMessage = AIRegex("Standard Order \d+ has been saved")
+AIUtil.FindTextBlock(OrderConfirmationMessage).CheckExists TRUE
 AIUtil.SetContext Browser("creationtime:=0")
 AIUtil("check_mark", micAnyText, micWithAnchorOnRight, AIUtil("button", "Save")).CheckExists True
 'StatusBarText = AIUtil.FindTextBlock(micAnyText, micWithAnchorOnLeft, AIUtil("check_box", micAnyText, micWithAnchorOnRight, AIUtil("button", "Save"))).GetText
