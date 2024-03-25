@@ -20,6 +20,10 @@ Action0=Action0\Script.mts
 05_va01_order_details=Action6\Script.mts
 07_va01_exit=Action7\Script.mts
 06_va01_create_new_order=Action9\Script.mts
+08_Launch_TCode_vl01n=Action10\Script.mts
+09_vl01n_create_outbound_delivery_with_order_reference=Action11\Script.mts
+10_vl01n_outbound_delivery_create_overview=Action12\Script.mts
+11_vl01n_exit=Action13\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -88,3 +92,15 @@ Action7\ObjectRepository.bdb=
 Action9\Script.mts=
 Action9\Resource.mtr=
 Action9\ObjectRepository.bdb=
+Action10\Script.mts=
+Action10\Resource.mtr=
+Action10\ObjectRepository.bdb=
+Action11\Script.mts=
+Action11\Resource.mtr=
+Action11\ObjectRepository.bdb=
+Action12\Script.mts=
+Action12\Resource.mtr=
+Action12\ObjectRepository.bdb=
+Action13\Script.mts=
+Action13\Resource.mtr=
+Action13\ObjectRepository.bdb=

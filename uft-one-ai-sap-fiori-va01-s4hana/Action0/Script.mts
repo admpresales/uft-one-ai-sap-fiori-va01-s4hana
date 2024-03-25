@@ -5,4 +5,8 @@ RunAction "04_va01_order_header", oneIteration
 RunAction "05_va01_order_details", oneIteration
 RunAction "06_va01_create_new_order", oneIteration
 RunAction "07_va01_exit", oneIteration
+RunAction "08_Launch_TCode_vl01n", oneIteration
+RunAction "09_vl01n_create_outbound_delivery_with_order_reference", oneIteration
+RunAction "10_vl01n_outbound_delivery_create_overview", oneIteration
+RunAction "11_vl01n_exit", oneIteration
 RunAction "99_logout", oneIteration

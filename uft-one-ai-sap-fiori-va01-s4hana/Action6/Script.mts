@@ -3,6 +3,8 @@ AIUtil.SetContext AppContext																'Tell the AI engine to point at the 
 
 AIUtil("plus").Click
 AIUtil("search", micAnyText, micFromBottom, 1).CheckExists True
+'the automation keeps overrunning the application
+wait 1
 set objSendKey=CreateObject("WScript.shell")
 objSendKey.SendKeys "+{TAB}"
 objSendKey.SendKeys DataTable.Value("Item", "05_va01_order_details")
