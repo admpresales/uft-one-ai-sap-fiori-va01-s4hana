@@ -5,6 +5,7 @@ AIUtil.SetContext AppContext																'Tell the AI engine to point at the 
 'objSendKey.SendKeys "{F11}"
 
 AIUtil("button", "Save").Click
+AppContext.Sync																			'Wait for the browser to stop spinning
 Set OrderConfirmationMessage = AIRegex("Standard Order \d+ has been saved")
 AIUtil.FindTextBlock(OrderConfirmationMessage).CheckExists TRUE
 AIUtil("check_mark", micAnyText, micWithAnchorOnRight, AIUtil("button", "Save")).CheckExists True

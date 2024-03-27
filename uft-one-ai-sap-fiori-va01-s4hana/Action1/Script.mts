@@ -20,6 +20,7 @@ AIUtil.SetContext AppContext																'Tell the AI engine to point at the 
 AIUtil("text_box", "User").SetText "s4h_sd_dem"
 AIUtil("text_box", "Password").SetText "Welcome1"
 AIUtil("button", "Log On").Click
+AppContext.Sync																			'Wait for the browser to stop spinning
 counter = 0
 Do
 	counter = counter + 1

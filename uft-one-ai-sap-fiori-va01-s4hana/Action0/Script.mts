@@ -9,4 +9,7 @@ RunAction "08_Launch_TCode_vl01n", oneIteration
 RunAction "09_vl01n_create_outbound_delivery_with_order_reference", oneIteration
 RunAction "10_vl01n_outbound_delivery_create_overview", oneIteration
 RunAction "11_vl01n_exit", oneIteration
+RunAction "12_Launch_TCode_vl02n", oneIteration
+RunAction "13_change_outbound_delivery", oneIteration
+RunAction "14_change_outbound_delivery_details", oneIteration
 RunAction "99_logout", oneIteration

@@ -3,7 +3,11 @@
 Set AppContext=Browser("CreationTime:=0")												'Set the variable for what application (in this case the browser) we are acting upon
 AIUtil.SetContext AppContext																'Tell the AI engine to point at the application
 
-AIUtil("search").Search "vl01n"
+AIUtil("search").Click
+AIUtil("text_box", "Search").SetText "vl01n"
+AIUtil("search").Click
+AppContext.Sync																			'Wait for the browser to stop spinning
+
 counter = 0
 Do
 	counter = counter + 1

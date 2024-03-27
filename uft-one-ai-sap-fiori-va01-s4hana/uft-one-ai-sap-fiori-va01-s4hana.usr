@@ -24,6 +24,9 @@ Action0=Action0\Script.mts
 09_vl01n_create_outbound_delivery_with_order_reference=Action11\Script.mts
 10_vl01n_outbound_delivery_create_overview=Action12\Script.mts
 11_vl01n_exit=Action13\Script.mts
+12_Launch_TCode_vl02n=Action14\Script.mts
+13_change_outbound_delivery=Action15\Script.mts
+14_change_outbound_delivery_details=Action16\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -104,3 +107,12 @@ Action12\ObjectRepository.bdb=
 Action13\Script.mts=
 Action13\Resource.mtr=
 Action13\ObjectRepository.bdb=
+Action14\Script.mts=
+Action14\Resource.mtr=
+Action14\ObjectRepository.bdb=
+Action15\Script.mts=
+Action15\Resource.mtr=
+Action15\ObjectRepository.bdb=
+Action16\Script.mts=
+Action16\Resource.mtr=
+Action16\ObjectRepository.bdb=
