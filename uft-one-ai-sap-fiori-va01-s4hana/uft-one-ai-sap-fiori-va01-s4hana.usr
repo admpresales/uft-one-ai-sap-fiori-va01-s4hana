@@ -27,6 +27,10 @@ Action0=Action0\Script.mts
 12_Launch_TCode_vl02n=Action14\Script.mts
 13_change_outbound_delivery=Action15\Script.mts
 14_change_outbound_delivery_details=Action16\Script.mts
+15_Launch_TCode_vf01=Action17\Script.mts
+16_vf01_create_billing_document=Action18\Script.mts
+17_Nav_to_Post_Incoming_Payments=Action19\Script.mts
+18_Post_Incoming_Payments=Action20\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -116,3 +120,15 @@ Action15\ObjectRepository.bdb=
 Action16\Script.mts=
 Action16\Resource.mtr=
 Action16\ObjectRepository.bdb=
+Action17\Script.mts=
+Action17\Resource.mtr=
+Action17\ObjectRepository.bdb=
+Action18\Script.mts=
+Action18\Resource.mtr=
+Action18\ObjectRepository.bdb=
+Action19\Script.mts=
+Action19\Resource.mtr=
+Action19\ObjectRepository.bdb=
+Action20\Script.mts=
+Action20\Resource.mtr=
+Action20\ObjectRepository.bdb=

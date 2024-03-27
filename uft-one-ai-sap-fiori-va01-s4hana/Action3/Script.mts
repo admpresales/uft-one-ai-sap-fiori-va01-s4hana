@@ -26,6 +26,6 @@ Do
 		msgbox "The Create Sales Order text block isn't disappearing like it should, check application"
 		ExitTest
 	End If
-Loop Until AIUtil.FindTextBlock("Create Sales Documents").Exist
+Loop Until AIUtil.FindTextBlock("Create Sales Documents").Exist(10)
 
 AIUtil("text_box", "Order Type:").CheckExists True

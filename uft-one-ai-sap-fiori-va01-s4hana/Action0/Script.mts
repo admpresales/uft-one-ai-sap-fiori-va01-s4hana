@@ -12,4 +12,8 @@ RunAction "11_vl01n_exit", oneIteration
 RunAction "12_Launch_TCode_vl02n", oneIteration
 RunAction "13_change_outbound_delivery", oneIteration
 RunAction "14_change_outbound_delivery_details", oneIteration
+RunAction "15_Launch_TCode_vf01", oneIteration
+RunAction "16_vf01_create_billing_document", oneIteration
+RunAction "17_Nav_to_Post_Incoming_Payments", oneIteration
+RunAction "18_Post_Incoming_Payments", oneIteration
 RunAction "99_logout", oneIteration
