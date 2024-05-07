@@ -12,6 +12,14 @@ AIUtil("text_box", "Type").SetText "DZ"
 AIUtil("text_box", "Document Date:").SetText FormatDateTime(Date, 2)
 AIUtil("button", "Post").Click
 AIUtil.Context.Unfreeze
+counter = 0
+Do
+	counter = counter + 1
+	If counter>=90 Then
+		Reporter.ReportEvent micFail, "Post Incoming Payment", "The post incoming payment confirmation message help link didn't come up within " & counter & " attempts, exiting action"
+		ExitAction
+	End If
+Loop Until AIUtil.FindTextBlock("Help").Exist(0)
 AIUtil.FindTextBlock("Help").Click
 AIUtil.RunSettings.OCR.UseConfigSet UFT_OCR
 Set DocumentConfirmationMessage = AIRegex("Document \d+ was posted in company code \d+")
