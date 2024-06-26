@@ -19,6 +19,7 @@ DeliveryMessageArray = Split(DeliveryMessage," ")
 DeliveryNumber = DeliveryMessageArray(2)
 print "Delivery number is " & DeliveryMessageArray(2)
 DataTable.Value("DeliveryNumber") = DeliveryMessageArray(2)
+Parameter.Item("DeliveryNumber") = DeliveryMessageArray(2)
 Reporter.ReportEvent micDone, "Delivery Number", "The Deliver Number from the popup window is " & DeliveryMessageArray(2) & "."
 
 AIUtil("check_mark").Click

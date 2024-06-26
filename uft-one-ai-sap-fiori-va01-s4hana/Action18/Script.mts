@@ -11,7 +11,7 @@ AIUtil("check_mark", micAnyText, micWithAnchorOnRight, AIUtil("button", "Save"))
 StatusBarText = AIUtil.FindTextBlock(micAnyText, micWithAnchorOnLeft, AIUtil("check_mark")).GetText
 StatusBarArray = Split(StatusBarText," ")
 print "The Billing Number is " & StatusBarArray(1)
-Parameter("NewBillingNumber") = StatusBarArray(1)
+Parameter("BillingNumber") = StatusBarArray(1)
 DataTable.Value("BillingNumber") = StatusBarArray(1)
 Reporter.ReportEvent micDone, "Billing Number", "The Billing Number from the Status Bar is " & StatusBarArray(1) & "."
 
